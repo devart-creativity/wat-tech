@@ -12,7 +12,31 @@ html
       .container
         .text-center
           .header-content
-            img(src= "../public/images/Groupe__.png")
+            img(src= "images/Groupe__.png")
             h1 Connect with developpers, designers & other tech lovers.
+            h2 Debug,discuss & learn.
+            .information
+            form(method="POST", action="/invite")#join-form.form
+              input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              if tokenRequired
+                input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+              input(type="submit", value="Join").submit
+              if !!recaptchaSiteKey
+                div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
+    if !!recaptchaSiteKey
+       script(src='https://www.google.com/recaptcha/api.js')
+    script.
+      var tokenRequired = #{tokenRequired};
+      var form = document.getElementById('join-form');
+      var email = document.getElementById('slack-email');
+      var token = document.getElementById('slack-token');
+      form.addEventListener('submit', function(evt) {
+        if (!email.value) {
+          evt.preventDefault();
+        }
+        if (tokenRequired && !token.value) {
+          evt.preventDefault();
+        }
+      });
 
     
