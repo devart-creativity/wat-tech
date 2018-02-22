@@ -162,3 +162,188 @@ a:hover {
 .g-recaptcha, .g-recaptcha > div {
   margin: auto;
 }
+
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	background: url(../img/alpha6_.jpg) no-repeat center center transparent;
+	background-size: cover;
+	position: relative;
+	min-height: 500px;
+}
+
+.header-content{
+	padding: 50px;
+	text-align: center;
+}
+.header-content img{
+	margin-bottom: 50px;
+}
+.header-content h1{
+	color: #3a0479;
+	font-weight: 300;
+	padding: 0 50px;
+
+}
+.header-content h2{
+	color: #515151;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.header-content form{
+		margin-bottom: 30px;
+}
+
+.header-content form input{
+	float: left;
+	width: auto;
+	border-top :0px;
+	border-left :0px;
+	border-right :0px;
+	border-bottom :1px solid #ddd;
+	border-radius: 0;
+	box-shadow: none;
+
+}
+.header-content form {
+	background: #fff;
+	display: inline-block;
+	clear: both;
+	float: none;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+.header-content form input[type='email']{
+	min-width: 300px;
+	
+}
+.header-content form input[type="submit"]{
+	color: #3a0479;
+	font-size: 16px;
+	font-weight: 300;
+	background: url(../img/icon.png) no-repeat center left;
+	display: block;
+	padding-left: 20px;
+}
+.header-content p{
+	color: #515151;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0 50px;
+	
+}
+
+#middle h1{
+	font-weight: 300;
+	color: #515151;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#middle h1 > span{
+	display: block;
+	font-weight: 300;
+	color: #c1c1c1;
+	margin-top: 30px;
+	font-size: 14px;
+	background: url(../img/Loudspeaker.png) no-repeat center left transparent;
+	    line-height: 25px;
+    background-position-x: 20px;
+}
+#middle{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.testimonials{
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.testimonial > p{
+	text-align: left;
+	font-size: 25px;
+	font-weight: 400;
+	color: #515151;
+}
+.testimonial > div{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.testimonial > div > img{
+	float: left;
+}
+.testimonial > div > p{
+	padding-left: 55px;
+}
+.testimonial > div > p > span{
+	display: block;
+}
+.testimonial > div > p > span:first-child{
+	color: #c1c1c1;
+	font-weight: 300;
+	font-size: 14px;
+}
+.testimonial > div > p > span:nth-child(2){
+	color: #000;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+#last{
+	padding: 50px 0;
+	background:url(../img/Rectangle_36.png) no-repeat center center transparent;
+	background-size: center; 
+}
+#last h1{
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+#last h3{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+}
+#last ul{
+	padding: 0;
+	margin-top: 20px;
+}
+#last ul > li{
+	list-style: none;
+}
+
+#last ul > li > a{
+	color: #fff;
+	line-height: 30px;
+}
+.links{
+	overflow: hidden;
+	margin-top: 100px;
+}
+
+footer{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+footer p{
+	color: #c1c1c1;
+}
+@media(min-height: 767px){
+	.header-content{
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+}
