@@ -20,7 +20,8 @@ html
               input(type="email", name="email",class="form-control", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-                input(type="submit",class="form-control", value="Send").submit
+              input(type="submit",class="form-control", value="Send").submit
+              div
                 script.
                       var tokenRequired = #{tokenRequired};
                       var form = document.getElementById('join-form');
