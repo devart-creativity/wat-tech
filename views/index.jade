@@ -17,10 +17,10 @@ html
             h2 Debug,discuss & learn.
             .information
             form(method="POST", action="/invite")#join-form.form
-              input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              input(type="email", name="email",class="form-control", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-              input(type="submit", value="Join").submit
+              input(type="submit",class="form-control", value="Send").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
     if !!recaptchaSiteKey
