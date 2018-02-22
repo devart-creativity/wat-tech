@@ -198,6 +198,9 @@ footer p{
 	.header-content form input[type='email']{
 		max-width: auto !important;
 	}
+	.header-content h1{
+		font-size: 27px;
+	}
 	.header-content h1,
 	.header-content p{
 		padding: 0;
