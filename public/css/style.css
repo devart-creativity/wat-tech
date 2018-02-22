@@ -144,7 +144,7 @@ header{
 #last{
 	padding: 50px 0;
 	background:url(../images/Rectangle_36.png) no-repeat center center transparent;
-	background-size: center; 
+	background-size: cover; 
 }
 #last h1{
 	color: #fff;
@@ -190,3 +190,19 @@ footer p{
 	}
 }
 
+
+@media(max-width: 767px){
+	.header-content form input[type='email']{
+		max-width: auto;
+	}
+	.header-content h1,
+	.header-content p{
+		padding: 0;
+	}
+	.testimonials{
+		margin-top: 50px;
+	}
+	.testimonial{
+		margin-bottom: 30px;
+	}
+}
