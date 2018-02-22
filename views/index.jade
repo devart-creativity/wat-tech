@@ -23,20 +23,20 @@ html
               input(type="submit",class="form-control", value="Send").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
-    if !!recaptchaSiteKey
-       script(src='https://www.google.com/recaptcha/api.js')
-    script.
-      var tokenRequired = #{tokenRequired};
-      var form = document.getElementById('join-form');
-      var email = document.getElementById('slack-email');
-      var token = document.getElementById('slack-token');
-      form.addEventListener('submit', function(evt) {
-        if (!email.value) {
-          evt.preventDefault();
-        }
-        if (tokenRequired && !token.value) {
-          evt.preventDefault();
-        }
-      });
+                    if !!recaptchaSiteKey
+                       script(src='https://www.google.com/recaptcha/api.js')
+                    script.
+                      var tokenRequired = #{tokenRequired};
+                      var form = document.getElementById('join-form');
+                      var email = document.getElementById('slack-email');
+                      var token = document.getElementById('slack-token');
+                      form.addEventListener('submit', function(evt) {
+                        if (!email.value) {
+                          evt.preventDefault();
+                        }
+                        if (tokenRequired && !token.value) {
+                          evt.preventDefault();
+                        }
+                      });
 
-    
+            p Join our slack community & discover a new way of work.We Are Tech Community is totally free for technologists :)
