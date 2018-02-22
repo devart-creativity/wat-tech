@@ -192,8 +192,11 @@ footer p{
 
 
 @media(max-width: 767px){
+	.header-content{
+		padding: 0 !important
+	}
 	.header-content form input[type='email']{
-		max-width: auto;
+		max-width: auto !important;
 	}
 	.header-content h1,
 	.header-content p{
