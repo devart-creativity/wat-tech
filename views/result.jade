@@ -35,7 +35,7 @@ html
                           evt.preventDefault();
                         }
                       });
-            h2 Great ! Please verify your emails & see you soon on Slack ! :)
+            h2(class="#{isFailed?'error':''}") !{message}
             p Join our slack community & discover a new way of work.We Are Tech Community is totally free for technologists :)
     #middle
       .container.text-center
